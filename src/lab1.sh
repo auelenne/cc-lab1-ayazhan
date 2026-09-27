@@ -60,7 +60,7 @@ ARCHIVE_NAME="backup_$(date +%Y%m%d).tar.gz"
  mv "/tmp/${ARCHIVE_NAME}" "${PROJECT_DIR}/backup/"
 
 echo "Logging completion message..."
-echo "Lab 1 completed successfully on $(date)" > "${PROJECT_DIR}/README.md"
+echo "Assignment completed successfully on $(date)" > "${PROJECT_DIR}/README.md"
 
 echo "Verifying final directory state..."
 if [ ! -d "${PROJECT_DIR}/data" ]; then
