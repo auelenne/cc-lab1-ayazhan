@@ -42,7 +42,7 @@ echo "Changing ownership of 'file4.txt'..."
 sudo chown nobody:nogroup "${PROJECT_DIR}/logs/file4.txt"
 
 echo "Creating symbolic link 'file1_link.txt' in 'scripts' directory..."
-ln -s ../backup/file1.txt "${PROJECT_DIR}/scripts/file1_link.txt"
+ln -sf ../backup/file1.txt "${PROJECT_DIR}/scripts/file1_link.txt"
 
 echo "Verifying the symbolic link of file1.txt..."
 ls -la "${PROJECT_DIR}/scripts/file1_link.txt"
